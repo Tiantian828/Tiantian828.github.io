@@ -2,13 +2,203 @@
 <html lang="zh">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI智能小说生成器 - 让创作更简单</title>
-    <meta name="description" content="使用AI技术，只需输入关键词即可生成引人入胜的小说。支持多种题材，让创作变得简单有趣。" />
+    <title>AI智能小说生成器 - 让创意自由流动</title>
+    <link href="/style.css" rel="stylesheet">
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+      <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-indigo-600">故事猫</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#features" class="text-gray-600 hover:text-indigo-600">功能特点</a>
+          <a href="#how-it-works" class="text-gray-600 hover:text-indigo-600">使用方法</a>
+          <a href="#pricing" class="text-gray-600 hover:text-indigo-600">价格方案</a>
+          <a href="#faq" class="text-gray-600 hover:text-indigo-600">常见问题</a>
+        </div>
+        <button class="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700">立即开始</button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-indigo-50 to-purple-50">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          AI驱动的智能小说创作平台
+        </h1>
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          只需输入关键词和题材，让AI为您创作独特的故事。
+          专业级叙事，精彩的情节发展，让您的创意瞬间成为动人的故事。
+        </p>
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-6 mb-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <input type="text" placeholder="输入人物名称" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500">
+            <input type="text" placeholder="输入故事题材" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500">
+          </div>
+          <button class="w-full md:w-auto bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition-colors">
+            生成小说
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">强大功能</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div class="text-indigo-600 text-2xl mb-4">🎯</div>
+            <h3 class="text-xl font-semibold mb-2">智能情节构建</h3>
+            <p class="text-gray-600">基于深度学习的情节生成系统，确保故事逻辑连贯，引人入胜。</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div class="text-indigo-600 text-2xl mb-4">✨</div>
+            <h3 class="text-xl font-semibold mb-2">丰富的写作风格</h3>
+            <p class="text-gray-600">多样化的写作风格和修辞手法，让每个故事都独具特色。</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div class="text-indigo-600 text-2xl mb-4">🚀</div>
+            <h3 class="text-xl font-semibold mb-2">快速生成</h3>
+            <p class="text-gray-600">秒级生成完整故事，让您的创意即刻成型。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-it-works" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">使用流程</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">1</span>
+            </div>
+            <h3 class="font-semibold mb-2">输入关键词</h3>
+            <p class="text-gray-600">填写人物名称和故事题材</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">2</span>
+            </div>
+            <h3 class="font-semibold mb-2">AI分析</h3>
+            <p class="text-gray-600">系统分析并构建故事框架</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">3</span>
+            </div>
+            <h3 class="font-semibold mb-2">生成故事</h3>
+            <p class="text-gray-600">智能创作完整故事内容</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">4</span>
+            </div>
+            <h3 class="font-semibold mb-2">导出作品</h3>
+            <p class="text-gray-600">下载或分享您的故事</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">价格方案</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+            <h3 class="text-xl font-semibold mb-4">基础版</h3>
+            <div class="text-3xl font-bold mb-4">¥29<span class="text-base font-normal text-gray-600">/月</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 每月10篇小说</li>
+              <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 基础故事模板</li>
+              <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 标准导出格式</li>
+            </ul>
+            <button class="w-full bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700">选择方案</button>
+          </div>
+          <div class="bg-indigo-50 p-8 rounded-xl shadow-sm border border-indigo-100 transform scale-105">
+            <h3 class="text-xl font-semibold mb-4">专业版</h3>
+            <div class="text-3xl font-bold mb-4">¥89<span class="text-base font-normal text-gray-600">/月</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 每月50篇小说</li>
+              <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 高级故事模板</li>
+              <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 多种导出格式</li>
+              <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 优先客服支持</li>
+            </ul>
+            <button class="w-full bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700">选择方案</button>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+            <h3 class="text-xl font-semibold mb-4">企业版</h3>
+            <div class="text-3xl font-bold mb-4">¥299<span class="text-base font-normal text-gray-600">/月</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 无限量小说</li>
+              <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 自定义模板</li>
+              <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> API接口支持</li>
+              <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 24/7专属支持</li>
+            </ul>
+            <button class="w-full bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700">联系我们</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">常见问题</h2>
+        <div class="max-w-3xl mx-auto space-y-6">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="font-semibold mb-2">生成的小说版权归属谁？</h3>
+            <p class="text-gray-600">所有通过我们平台生成的小说版权均归用户所有。您可以自由使用、修改和发布这些内容。</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="font-semibold mb-2">生成的小说质量如何保证？</h3>
+            <p class="text-gray-600">我们采用先进的AI模型，确保生成的故事具有完整的情节结构、丰富的细节描写和流畅的语言表达。</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="font-semibold mb-2">支持哪些导出格式？</h3>
+            <p class="text-gray-600">目前支持TXT、PDF、Word等多种格式导出，专业版还支持自定义排版。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h4 class="text-white font-semibold mb-4">关于我们</h4>
+            <p class="text-sm">故事猫致力于为创作者提供智能写作解决方案，让创意表达更加简单高效。</p>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-4">快速链接</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#features" class="hover:text-white">功能特点</a></li>
+              <li><a href="#pricing" class="hover:text-white">价格方案</a></li>
+              <li><a href="#faq" class="hover:text-white">常见问题</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-4">联系方式</h4>
+            <p class="text-sm">邮箱：zhenghantian@163.com</p>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-4">关注我们</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">微信</a>
+              <a href="#" class="text-gray-400 hover:text-white">微博</a>
+              <a href="#" class="text-gray-400 hover:text-white">知乎</a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-sm text-center">
+          <p>© 2024 故事猫. 版权所有</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
